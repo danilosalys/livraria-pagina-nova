@@ -14,4 +14,4 @@ db.hasConnection()
 
 app.use(routes)
 
-app.listen(4500, () => console.log('Servidor no ar!'))
+app.listen(4500, () => console.log('Servidor no ar! Porta 4500'))
