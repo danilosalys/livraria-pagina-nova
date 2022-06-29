@@ -1,0 +1,22 @@
+************************ SUBINDO O PROJETO NO HEROKU*************************
+baixar o HEROKU no site do HEROKU
+
+1 - verificar se o heroku esta instalado: "heroku" no terminar
+
+2 - logar no heroku via terminal:
+
+    heroku login
+
+3 - criar um projeto no heroku git: 
+
+    heroku create <nome do projeto>
+
+4 - ver se o repositorio remoto foi criado
+
+    git remote -v
+
+5 - fazer deploy do projeto: 
+
+    git push heroku
+
+

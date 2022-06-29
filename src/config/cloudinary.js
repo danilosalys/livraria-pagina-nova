@@ -1,9 +1,10 @@
 const cloudinary = require("cloudinary");
+require('dotenv').config()
 
 cloudinary.config({
-  cloud_name: "drderxybw",
-  api_key: "148611135442137",
-  api_secret: "3XFByNwFdKZvYHYV2OYxg9R8cb0"
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
 //metodo que vai executar o upload no cloudinary
