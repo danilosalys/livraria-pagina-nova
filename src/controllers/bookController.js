@@ -1,5 +1,6 @@
 const { Books } = require('../database/models');
 const cloudinary = require('../config/cloudinary');
+const fs = require("fs");
 
 const imageFolder = 'images/'
 
@@ -10,8 +11,8 @@ const BookController = {
         //console.log(file);
 
         const uploadPath = await cloudinary.uploads(file.path,'livraria')
-        console.log(uploadPath);
-
+        fs.unlinkSync(file.path)
+        
         const newBook = await Books.create({
             ...req.body,
            //forma de upload na aplicação 
